@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website Using HTML & CSS | Codehal</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav class="navbar">
+    <a href="#" class="logo">Portofolio</a>
+    <ul>
+    <li class="active"><a href="#home">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#portfolio">Portfolio</a></li>
+    <li><a href="#service">Service</a></li>
+    <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+<div class="bars-animation">
+    <div class="bar" style="--i:6;"></div>
+    <div class="bar" style="--i:5;"></div>
+    <div class="bar" style="--i:4;"></div>
+    <div class="bar" style="--i:3;"></div>
+    <div class="bar" style="--i:2;"></div>
+    <div class="bar" style="--i:1;"></div>
+</div>
+
+<section id="home" class="home">
+    <div class="home-info">
+        <h1>David Rusu</h1>
+        <h2>I'm a 
+            <span style="--i:4;" data-text="Frontend Developer">Frontend Developer</span>
+            <span style="--i:3;" data-text="YouTube">YouTube</span>
+            <span style="--i:2;" data-text="Blogger">Blogger</span>
+            <span style="--i:1;" data-text="Designer">Designer</span>
+        </h2>
+        <p>I'm ipsum dolor sit amet consectetour adipisicing elit.
+            Beatae aut minus, itaque facere voluptatum, doloremque repellendus obcaecati, asperiores expedita.
+            Apeiam voluptatum blanditis sint pariatur totam.
+        </p>
+        <div class="btn-sci">
+            <a href="#" class="btn">Download CV</a>
+            <div class="sci">
+                <a href="https://github.com" target="_blank"><i class='bx bxl-github'></i></a>
+                <a href="https://linkedin.com" target="_blank"><i class='bx bxl-linkedin' ></i></a>
+                <a href="https://twitter.com" target="_blank"><i class='bx bxl-twitter' ></i></a>
+                <a href="https://facebook.com" target="_blank"><i class='bx bxl-facebook-circle' ></i></a>
+                <a href="https://youtube.com" target="_blank"><i class='bx bxl-youtube' ></i></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="home-img">
+        <div class="img-box">
+            <div class="img-item">
+                <img src="rdg.jpg" alt="">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- About Section -->
+<section id="about" class="about">
+    <div class="about-info">
+      <h2>About Me</h2>
+      <p>Hello! I'm David Rusu, a passionate frontend developer with a love for creating beautiful and functional websites. I specialize in HTML, CSS, JavaScript, and building dynamic, interactive user interfaces. I am constantly learning and exploring new technologies to improve my skills.</p>
+      <p>With a background in design and a keen eye for detail, I strive to deliver high-quality solutions that are both user-friendly and visually appealing.</p>
+    </div>
+    <div class="about-img">
+      <img src="rdg.jpg" alt="David Rusu">
+    </div>
+  </section>
+  
+  <!-- Portfolio Section -->
+  <section id="portfolio" class="portfolio">
+    <div class="portfolio-content">
+      <h2>My Portfolio</h2>
+      <div class="portfolio-items">
+        <div class="portfolio-item">
+          <img src="sumup-6GJCnDl6Krw-unsplash.jpg" alt="Project 1">
+          <h3>Landing Page</h3>
+          <p>A simple and clean landing page built with HTML, CSS, and a bit of JavaScript.</p>
+        </div>
+        <div class="portfolio-item">
+          <img src="sumup-IlHemAQpJ-U-unsplash.jpg" alt="Project 2">
+          <h3>Portfolio Website</h3>
+          <p>This portfolio site you're visiting right now – fully responsive and animated.</p>
+        </div>
+        <div class="portfolio-item">
+          <img src="sumup-QXT42ILcwe4-unsplash.jpg" alt="Project 3">
+          <h3>Blog Template</h3>
+          <p>A modern blog layout designed for readability and performance.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+       <!-- Section Services -->
+  <section id="service" class="services">
+    <div class="services-content">
+      <h2>My Services</h2>
+      <div class="services-items">
+        <div class="service-item">
+          <i class='bx bx-code-alt'></i>
+          <h3>Web Development</h3>
+          <p>I build modern, responsive websites using HTML, CSS, and JavaScript – with clean code and eye-catching design.</p>
+        </div>
+        <div class="service-item">
+          <i class='bx bx-paint'></i>
+          <h3>UI/UX Design</h3>
+          <p>I design intuitive and elegant user interfaces that improve the user experience and engagement.</p>
+        </div>
+        <div class="service-item">
+          <i class='bx bxl-youtube'></i>
+          <h3>Content Creation</h3>
+          <p>I create educational tech content on YouTube to help beginners learn web development and design.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+    <div id="contact" class="contact">
+      <div class="contact-content">
+        <h2>Contact Me</h2>
+        <form id="contact-form">
+          <div class="input-box">
+            <input type="text" name="user_name" placeholder="Your Name" required>
+            <input type="email" name="user_email" placeholder="Your Email" required>
+          </div>
+          <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
+          <button type="submit" class="btn">Send Message</button>
+        </form>
+      </div>
+    
+      <div class="contact-info">
+      <h3>Other Ways to Reach Me</h3>
+      <p>You can also reach me through social media or by email:</p>
+      <div class="sci">
+        <a href="https://github.com" target="_blank"><i class='bx bxl-github'></i></a>
+        <a href="https://linkedin.com" target="_blank"><i class='bx bxl-linkedin'></i></a>
+        <a href="https://twitter.com" target="_blank"><i class='bx bxl-twitter'></i></a>
+        <a href="https://facebook.com" target="_blank"><i class='bx bxl-facebook-circle'></i></a>
+      </div>
+    </div>
+  </section>
+ <!-- Footer -->
+<footer class="footer">
+    <p>&copy; 2025 David Rusu. All rights reserved.</p>
+  
+    <div class="footer-links">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#service">Service</a>
+      <a href="#contact">Contact</a>
+    </div>
+  
+
+    <div class="footer-links">
+        <a href="https://github.com" target="_blank"><i class='bx bxl-github'></i></a>
+        <a href="https://linkedin.com" target="_blank"><i class='bx bxl-linkedin'></i></a>
+        <a href="https://facebook.com" target="_blank"><i class='bx bxl-facebook-circle'></i></a>
+        <a href="https://youtube.com" target="_blank"><i class='bx bxl-youtube'></i></a>
+      </div>
+    <a href="#home" class="scroll-top"><i class='bx bx-up-arrow-alt'></i></a>
+  </footer>
+
+<script src="script.js"></script>
+<script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+</body>
+
+</html>
